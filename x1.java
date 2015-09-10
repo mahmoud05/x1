@@ -8,8 +8,8 @@ float horizon;
 
 //// SETUP:  window size, initialization (start in middle of screen).
 void setup() {
-  size( 640,480);
-  horizon=  height/4;
+  size( 740,680);
+  horizon=  height/3;
   x=  width/2;
   y=  height/2;
   dx=  3;
@@ -23,11 +23,15 @@ void draw() {
   fill( 255,255,0 );
   ellipse( width*3/4, height/8, 40,40 );    // sun
   // Grass
+  fill( 200,150,100);
+  rect( 115,horizon/1.3,30,80);
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   
   /* INSERT YOUR CODE HERE! */
-  triangle( 150,horizon, 120,horizon-50, 180,horizon-50  );  // tree
+  
+  triangle( 150,horizon/2, 80,horizon-50, 180,horizon-50  );  // tree
+  triangle( 120,horizon/2.5, 80,horizon-50, 180,horizon-50  );
   text( "This is NOT a good tree; please fix it!", 150,horizon );
                                             // house
 
@@ -62,5 +66,3 @@ void keyPressed() {
   }
 }
    
-   
-
