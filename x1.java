@@ -36,7 +36,7 @@ void draw() {
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is Mahmoud", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -45,8 +45,14 @@ void draw() {
   //// SHOW:  display the creature at (x,y)
 
   /* INSERT YOUR CODE HERE! */
-  fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+  stroke(0);
+  fill( 130,120,80);
+  ellipse(x+10,y-13,30,25);
+  fill(255,80,140); rect( x,y, 20,60 );        /* REPLACE THIS WITH YOUR OWN CODE! */
+  fill( 130,120,80);
+  ellipse(x+10,y+70,30,25);
+  fill(255,0,0);
+  text( "ted", x,y );
 
 }
 
