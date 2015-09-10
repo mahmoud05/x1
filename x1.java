@@ -32,7 +32,8 @@ void draw() {
   
   triangle( 150,horizon/2, 80,horizon-50, 180,horizon-50  );  // tree
   triangle( 120,horizon/2.5, 80,horizon-50, 180,horizon-50  );
-  text( "This is NOT a good tree; please fix it!", 150,horizon );
+  fill(255,200,200);
+  text( "strawberry fields", 150,horizon );
                                             // house
 
   fill(0);
