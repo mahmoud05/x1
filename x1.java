@@ -53,7 +53,7 @@ void draw() {
   fill( 130,120,80);
   ellipse(x+10,y+70,30,25);
   fill(255,0,0);
-  text( "ted", x,y );
+  text( "Bond", x+30,y+30 );
 
 }
 
